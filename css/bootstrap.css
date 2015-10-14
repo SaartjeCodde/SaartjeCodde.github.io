@@ -1086,8 +1086,8 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #FFFFFF; /*TODO: KLEUR VERANDEREN - BODY TEXT*/
-  background-color: #484848; /*TODO: KLEUR VERANDEREN - BODY*/
+  color: #2b2b2b; /*Body text color*/
+  background-color: #f6f6f6; /*Body color*/
 }
 input,
 button,
@@ -1103,7 +1103,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #e74c3c;
+  color: #18bc9c;
   text-decoration: underline;
 }
 a:focus {
@@ -2546,7 +2546,7 @@ output {
   padding: 10px 15px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #2c3e50;
+  color: #f6f6f6; /*Color text typed in message box*/
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #dce4ec;
@@ -3129,8 +3129,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #18bc9c;
-  border-color: #18bc9c;
+  background-color: #f44d3c;
+  border-color: #ffffff;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -3138,9 +3138,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
-  color: #ffffff;
-  background-color: #128f76;
-  border-color: #11866f;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .btn-success:active,
 .btn-success.active,
@@ -4401,7 +4401,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #18bc9c;
+  color: #f44d3c; /*color saartje codde*/
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -4412,14 +4412,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #18bc9c;
+  color: #f44d3c; /*// color letters vanboven*/
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #1a242f;
+  background-color: #f44d3c; /*// color selectie blokken*/
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4497,7 +4497,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #2c3e50;
+  color: #2c3e50; 
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
@@ -5754,7 +5754,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #2b2b2b; /*TODO: KLEUR VERANDEREN - ACHTERGROND PROJECT DETAILS*/
+  background-color: #2b2b2b; /*// background color project details*/
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6145,7 +6145,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 30px;
+  bottom: 0;
   width: 15%;
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -6609,7 +6609,7 @@ button.close {
 }
 .text-danger,
 .text-danger:hover {
-  color: #e74c3c;
+  color: #2b2b2b; /*not a valid email adres*/
 }
 .text-warning,
 .text-warning:hover {
@@ -6826,4 +6826,12 @@ a.list-group-item-danger.active:focus {
 }
 .popover {
   color: #2c3e50;
+}
+
+.project-details{
+    color: #f6f6f6; /*color text portfolio details*/
+}
+
+.project-title{
+    color: #f6f6f6; /*color ttitle portfolio details*/
 }

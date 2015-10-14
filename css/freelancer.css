@@ -16,16 +16,13 @@ p.small {
     font-size: 16px;
 }
 
-
-/*Links*/
 a,
 a:hover,
 a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
-
+    color: #18bc9c; 
 }
 
 h1,
@@ -51,7 +48,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f0e7";
+    content: "\f005";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -66,16 +63,16 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #e74c3c;
+    background-color: #18bc9c;
 }
 
 hr.star-primary {
-    border-color: #FFFFFF;
+    border-color: #f6f6f6;
 }
 
 hr.star-primary:after {
-    color: #FFFFFF;  /*TODO: KLEUR VERANDEREN ICON ZELF*/
-    background-color: #484848; /*TODO: KLEUR VERANDEREN BACKGROUND ICON*/
+    color: #2c3e50;
+    background-color: #fff;
 }
 
 /*ENVELOPE ICON*/
@@ -86,7 +83,7 @@ hr.envelope {
     border: 0;
     border-top: solid 5px;
     text-align: center;
-    border-color: #FFFFFF;
+    border-color: #f6f6f6;
 }
 
 hr.envelope:after {
@@ -97,8 +94,8 @@ hr.envelope:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
-    color: #FFFFFF; /*TODO: COLOR ENVELOPE ICON*/
-    background-color: #e74c3c; /*TODO: COLOR ENVELOPE ICON BACKGROUND*/
+    color: #f6f6f6; /*TODO: COLOR ENVELOPE ICON*/
+    background-color: #f44d3c; /*TODO: COLOR ENVELOPE ICON BACKGROUND*/
 }
 
 /*CUBE ICON*/
@@ -109,7 +106,7 @@ hr.cube {
     border: 0;
     border-top: solid 5px;
     text-align: center;
-    border-color: #FFFFFF;
+    border-color: #2b2b2b;
 }
 
 hr.cube:after {
@@ -120,8 +117,31 @@ hr.cube:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
-    color: #FFFFFF; /*TODO: COLOR CUBE ICON*/
-    background-color: #e74c3c; /*TODO: COLOR CUBE ICON BACKGROUND*/
+    color: #2b2b2b; /*TODO: COLOR CUBE ICON*/
+    background-color: #f6f6f6; /*TODO: COLOR CUBE ICON BACKGROUND*/
+}
+
+/*FLASH ICON*/
+hr.flash {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+    border-color: #FFFFFF;
+}
+
+hr.flash:after {
+    content: "\f0e7";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+    color: #FFFFFF; /*TODO: COLOR FLASH ICON*/
+    background-color: #2b2b2b; /*TODO: COLOR FLASH ICON BACKGROUND*/
 }
 
 /*GAMEPAD ICON*/
@@ -132,7 +152,7 @@ hr.gamepad {
     border: 0;
     border-top: solid 5px;
     text-align: center;
-    border-color: #FFFFFF;
+    border-color: #f6f6f6;
 }
 
 hr.gamepad:after {
@@ -143,8 +163,8 @@ hr.gamepad:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
-    color: #FFFFFF; /*TODO: COLOR GAMEPAD ICON*/
-    background-color: #484848; /*TODO: COLOR GAMEPAD ICON BACKGROUND*/
+    color: #f6f6f6; /*TODO: COLOR GAMEPAD ICON*/
+    background-color: #f44d3c; /*TODO: COLOR GAMEPAD ICON BACKGROUND*/
 }
 
 /*USER ICON*/
@@ -167,7 +187,7 @@ hr.user:after {
     font-family: FontAwesome;
     font-size: 2em;
     color: #FFFFFF; /*TODO: COLOR USER ICON*/
-    background-color: #484848; /*TODO: COLOR USER ICON BACKGROUND*/
+    background-color: #f6f6f6; /*TODO: COLOR USER ICON BACKGROUND*/
 }
 
 .img-centered {
@@ -177,7 +197,7 @@ hr.user:after {
 header {
     text-align: center;
     color: #fff;
-    background: #e74c3c;
+    background: #f44d3c; /*Background color front page*/
 }
 
 header .container {
@@ -199,7 +219,7 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
+    font-size: 1.79em;
     font-weight: 300;
 }
 
@@ -214,7 +234,7 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 2.5em;
     }
 }
 
@@ -245,7 +265,7 @@ header .intro-text .skills {
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;  
+    font-weight: 700;
 }
 
 .navbar a:focus {
@@ -276,7 +296,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #e74c3c;
+    background: #f44d3c; /*Background color red pages*/
 }
 
 section.success a,
@@ -310,16 +330,12 @@ section.success a.active {
     max-width: 400px;
 }
 
-.portfolio-link{
-    border: solid 2px white; /*TODO: BORDER PORTFOLIO ITEMS*/
-}
-
 #portfolio .portfolio-item .portfolio-link .caption {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(29,29,29,.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -361,10 +377,10 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 1px #000;
     font-size: 20px;
-    color: #fff;
-    background: 0 0;
+    color: #000;
+    background: 0 0; /*Static color resume button*/
     transition: all .3s ease-in-out;
 }
 
@@ -373,8 +389,8 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    color: #fff;
+    background: #f44d3c; /*Hover color resume button*/
 }
 
 .floating-label-form-group {
@@ -426,7 +442,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #2b2b2b; /*color kleine letterkes message box*/
 }
 
 form .row:first-child .floating-label-form-group {
@@ -443,7 +459,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #484848;
 }
 
 footer .footer-col {
@@ -452,7 +468,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #2b2b2b;
 }
 
 .btn-social {
@@ -464,12 +480,6 @@ footer .footer-below {
     text-align: center;
     font-size: 20px;
     line-height: 45px;
-}
-
-/*BUTTON HOVER COLOR*/
-.btn.colorBtn:hover,
-.btn.colorBtn:focus {
-    color: #2b2b2b; /*TODO: CHANGE COLOR BUTTON HOVER*/
 }
 
 .btn:focus,
@@ -542,7 +552,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #f6f6f6;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -552,7 +562,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: #f6f6f6;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -561,4 +571,12 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.portfolio-link{
+    border: solid 2px black; /*Color border portfolio items*/
+}
+
+.alt-portfolio-link{
+    border: solid 2px #ffffff; /*Color border portfolio items*/
 }
