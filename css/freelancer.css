@@ -71,8 +71,8 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
+    color: #f6f6f6;
+    background-color: #2b2b2b;
 }
 
 /*ENVELOPE ICON*/
@@ -175,7 +175,7 @@ hr.user {
     border: 0;
     border-top: solid 5px;
     text-align: center;
-    border-color: #FFFFFF;
+    border-color: #2b2b2b;
 }
 
 hr.user:after {
@@ -186,7 +186,7 @@ hr.user:after {
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
-    color: #FFFFFF; /*TODO: COLOR USER ICON*/
+    color: #2b2b2b; /*TODO: COLOR USER ICON*/
     background-color: #f6f6f6; /*TODO: COLOR USER ICON BACKGROUND*/
 }
 
